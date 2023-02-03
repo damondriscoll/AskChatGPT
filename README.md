@@ -20,3 +20,5 @@ Responds to /r/AskReddit posts using OpenAI's GPT-3 model trained on the top 100
   $ openai api fine_tunes.list
 ```
 6. Set the variables at the top of AskChatGPT.py
+
+You can then run the file, if you want it to run every so often set up a schedule (I used Heroku Schedule)
