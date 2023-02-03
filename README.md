@@ -24,4 +24,4 @@ I scraped the Reddit data using [PRAW](https://praw.readthedocs.io/en/stable/). 
 ```
 7. Set the variables at the top of AskChatGPT.py
 
-You can then run the file, if you want it to run every so often set up a schedule (I used Heroku Schedule)
+You can then run the file. If you want it to run every so often set up a scheduler (I used Heroku Schedule)
