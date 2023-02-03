@@ -10,7 +10,6 @@ MY_REDDIT_PASSWORD = os.getenv("MY_REDDIT_PASSWORD")
 MY_REDDIT_USERNAME = os.getenv("MY_REDDIT_USERNAME")
 FINE_TUNED_MODEL = os.getenv("FINE_TUNED_MODEL")
 
-
 reddit = praw.Reddit(
     client_id = APP_CLIENT_ID,
     client_secret = APP_CLIENT_SECRET,
