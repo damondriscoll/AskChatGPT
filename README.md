@@ -1,4 +1,4 @@
-## AskChatGPT
+## AskGPT
 Responds to /r/AskReddit posts using an OpenAI GPT-3 model trained on the top 1000 most upvoted posts and their top comments.
 
 [Reddit account using this script](https://www.reddit.com/u/OrganRobber)
@@ -22,6 +22,6 @@ I scraped the Reddit data using [PRAW](https://praw.readthedocs.io/en/stable/). 
 ```
   $ openai api fine_tunes.list
 ```
-7. Set the variables at the top of AskChatGPT.py
+7. Set the variables at the top of AskGPT.py
 
 You can then run the file. If you want it to run every so often set up a scheduler (I used Heroku Schedule)
