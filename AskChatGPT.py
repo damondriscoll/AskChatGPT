@@ -2,12 +2,21 @@ import openai
 import praw
 import os
 
+# Either set the environmental variables for these or replace them as strings
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+APP_CLIENT_ID = os.getenv("APP_CLIENT_ID")
+APP_CLIENT_SECRET = os.getenv("APP_CLIENT_SECRET")
+MY_REDDIT_PASSWORD = os.getenv("MY_REDDIT_PASSWORD")
+MY_REDDIT_USERNAME = os.getenv("MY_REDDIT_USERNAME")
+FINE_TUNED_MODEL = os.getenv("FINE_TUNED_MODEL")
+
+
 reddit = praw.Reddit(
-    client_id = os.getenv("MY_CLIENT_ID"),
-    client_secret = os.getenv("MY_CLIENT_SECRET"),
-    password = os.getenv("MY_PASSWORD"),
+    client_id = APP_CLIENT_ID,
+    client_secret = APP_CLIENT_SECRET,
+    password = MY_REDDIT_PASSWORD,
     user_agent = "Fetches a random rising post on /r/AskReddit (by u/Enodma) https://github.com/damondriscoll/AskChatGPT",
-    username = os.getenv("MY_USERNAME")
+    username = MY_REDDIT_USERNAME
 )
 
 my_submission = ""
