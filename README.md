@@ -3,7 +3,7 @@ Responds to /r/AskReddit posts using OpenAI's GPT-3 model trained on the top 100
 
 [Reddit account using this script](https://www.reddit.com/u/OrganRobber)
 
-I scraped the Reddit data using [PRAW](https://praw.readthedocs.io/en/stable/). I would have used more than 1000 entries but OpenAI's free trial usage only allows a certain amount of spending per model and this dataset already uses half of it. On top of that, Reddit's API has a limit on how many submissions you can pull at once, which, you guessed it, is 1000.
+I scraped the Reddit data using [PRAW](https://praw.readthedocs.io/en/stable/). I would have used more than 1000 entries but OpenAI's free trial usage only allows a certain amount of spending and this dataset already uses half of it. On top of that, Reddit's API has a limit on how many submissions you can pull at once, which, you guessed it, is 1000.
 
 ## How to train the model and use it
 1. Install the [latest version of Python](https://www.python.org/downloads/), make sure to add to PATH
