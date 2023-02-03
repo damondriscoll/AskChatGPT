@@ -3,7 +3,7 @@ Responds to /r/AskReddit posts using OpenAI's GPT-3 model trained on the top 100
 
 [Reddit account using this script](https://www.reddit.com/u/OrganRobber)
 
-## How to train the model and run the script
+## How to train the model and use it
 1. Create an API key on [OpenAI's site](https://platform.openai.com/account/api-keys)
 2. Create a [Reddit app](https://www.reddit.com/prefs/apps)
 3. Clone the repository, then navigate to its directory and run the following commands:
