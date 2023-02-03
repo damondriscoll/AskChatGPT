@@ -14,7 +14,7 @@ reddit = praw.Reddit(
     client_id = APP_CLIENT_ID,
     client_secret = APP_CLIENT_SECRET,
     password = MY_REDDIT_PASSWORD,
-    user_agent = "Fetches a random rising post on /r/AskReddit (by u/Enodma) https://github.com/damondriscoll/AskChatGPT",
+    user_agent = "Fetches a random rising post on /r/AskReddit (by u/Enodma) https://github.com/damondriscoll/AskGPT",
     username = MY_REDDIT_USERNAME
 )
 
@@ -27,7 +27,7 @@ for submission in reddit.subreddit("AskReddit").random_rising():
 print(my_submission.title)
 
 completions = openai.Completion.create(
-    engine = os.getenv("MY_OPEN_AI_MODEL"),
+    engine = FINE_TUNED_MODEL,
     prompt = str(my_submission.title).encode("ascii", errors="ignore").decode() + "\n\n###\n\n",
     max_tokens = 1024,
     n = 1,
