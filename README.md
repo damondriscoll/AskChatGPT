@@ -1,7 +1,9 @@
 ## AskGPT
 Responds to /r/AskReddit posts using an OpenAI GPT-3 model trained on the top 1000 most upvoted posts and their top comments.
 
-[Reddit account using this model](https://www.reddit.com/u/OrganRobber)
+[Reddit account using this model](https://www.reddit.com/u/OrganRobber) - **The account has since been banned since Reddit doesn't allow bots.**
+
+
 
 I scraped the Reddit data using [PRAW](https://praw.readthedocs.io/en/stable/). I would have used more than 1000 entries but OpenAI's free trial usage only allows a certain amount of spending and this dataset already uses half of it. On top of that, Reddit's API has a limit on how many submissions you can pull at once, which, you guessed it, is 1000.
 
